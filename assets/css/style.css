@@ -1,1 +1,4 @@
-
+#aside {
+    position: relative;
+    float: left;
+}
