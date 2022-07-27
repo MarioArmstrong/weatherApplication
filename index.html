@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Application</title>
 </head>
 <body>
+    <header class="container-fluid text-center">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <section class="">
+        <aside id="aside">
+            <input id="searchBox" placeholder="Search a City">
+            <button id="searchCityBTN">Search</button>
+        </aside>
+    </section>
+    <section class="cityHighlightArea">
+        <card class="city">
 
-<script type="text/javascript" src="./assets/js/script.js"></script>
+        </card>
+    </section>
+    <section class="row">
+        <h2>5-Day Forecast:</h2>
+        <card class="forecastDay1 card col-sm-2 border-primary">
+            <h4></h4>
+        </card>
+        <card class="forecastDay2 card col-sm-2 border-primary">
+            <h4></h4>
+        </card>
+        <card class="forecastDay3 card col-sm-2 border-primary">
+            <h4></h4>
+        </card>
+        <card class="forecastDay4 card col-sm-2 border-primary">
+            <h4></h4>
+        </card>
+        <card class="forecastDay5 card col-sm-2 border-primary">
+            <h4></h4>
+        </card>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 </html>
