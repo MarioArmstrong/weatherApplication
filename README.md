@@ -1,8 +1,8 @@
 # weatherApplication
 
-Live gitHub Link: https://marioarmstrong.github.io/weatherApplication/
+Live github Link: https://marioarmstrong.github.io/weatherApplication/
 
-gitHub Repository: https://github.com/MarioArmstrong/weatherApplication
+github Repository: https://github.com/MarioArmstrong/weatherApplication
 
 This is not finished. It will be updated later this week so that the JS is more functional.
 
