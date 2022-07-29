@@ -9,27 +9,26 @@
     <title>Weather Application</title>
 </head>
 <body class="body">
-    <header class="container-fluid text-center">
-        <h1>Weather Dashboard</h1>
+    <header class="jumbotron text-center bg-info">
+        <h1 class="display-2">Weather Dashboard</h1>
     </header>
-    <section class="">
-        <aside id="aside">
-            <input type="text" id="searchBoxInput" placeholder="Search a City">
-            <button id="searchCityBTN">Search</button>
-        </aside>
+    <section class="d-flex">
+        <div class="row justify-content-start">
+            <input type="text" id="searchBoxInput" class="form-control" placeholder="Search a City">
+            <button id="searchCityBTN" class="btn btn-outline-secondary">Search</button>
+        </div>
     </section>
 
     <!--City Highlight-->
-    <section class="cityHighlightArea">
-        <card class="city">
+    <section class="">
+        <card class="d-flex justify-content-xl-center" id="city">
         </card>
     </section><!--END Highlight-->
 
     <!--5-Day Forecast-->
-    <section class="row card">
+        <section class="d-flex justify-content-end" id="row">
 
-    </section><!--END 5-day-->
-
+        </section><!--END 5-day-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>

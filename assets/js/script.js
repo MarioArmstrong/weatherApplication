@@ -3,10 +3,10 @@ var APIKey = "59ce11a5925422e0542cfcb16e4281b7";
 
 var input = document.getElementById("searchBoxInput");
 var cityBtn = document.getElementById("searchCityBTN");
-var cityHighlight = document.querySelector(".city");
-var rows = document.querySelector("row");
+var cityHighlight = document.getElementById("city");
+var rows = document.getElementById("row");
 
-const Fahrenheit = ((kelvin - 273.15) * 1.8) + 32
+// const Fahrenheit = ((kelvin - 273.15) * 1.8) + 32
 
 function fetchURLInfo(event) {
     event.preventDefault();
@@ -26,7 +26,7 @@ function fetchURLInfo(event) {
 
 
 
-        var urlData = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey;
+        var urlData = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=" + APIKey;
             fetch(urlData)
             .then(function(response){
                 return response.json();
@@ -34,7 +34,7 @@ function fetchURLInfo(event) {
 
             .then(function(data){
                 console.log(data);
-                for(var i=0; i< 6; i++){
+                for(var i=0; i< 5; i++){
 
                     var createCardSection = document.createElement("div")
                     var createCardHeading = document.createElement("h3");            
@@ -43,13 +43,15 @@ function fetchURLInfo(event) {
                     cardContent.textContent = data.daily[i].temp.max;
                     // createCardHeading.textContent = data.name;
 
+                    cardContent.classList.add("card-text");
+                    createCardHeading.classList.add("card-title");
+                    createCardSection.classList.add("card-body");
+
+
                     createCardHeading.appendChild(cardContent);
                     createCardSection.appendChild(createCardHeading);
                     rows.appendChild(createCardSection);            
 
-                    cardContent.classList.add("card-text");
-                    createCardHeading.classList.add("card-title");
-                    createCardSection.classList.add("card-body");
 
                 }
             })
