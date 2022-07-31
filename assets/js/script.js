@@ -7,7 +7,7 @@ var cityHighlight = document.querySelector(".city");
 var rows = document.getElementById("row");
 
 function fetchURLInfo(event) {
-    event.preventDefault();
+    event.preventDefault(); 
 
     var hideHello = document.getElementById("helloSection");
     
