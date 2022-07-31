@@ -1,4 +1,16 @@
-#aside {
+/* #aside {
     position: relative;
     float: left;
+} */
+
+#hr {
+    background-color: goldenrod;
+    width: 100%;
+    height: 5px;
 }
+
+/* #search {
+    position: absolute;
+    top: 5%; 
+    right: 48.5%;
+} */
