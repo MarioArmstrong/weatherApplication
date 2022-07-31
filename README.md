@@ -1,6 +1,6 @@
 # weatherApplication
 
-Live github Link: https://marioarmstrong.github.io/weatherApplication/
+Live github Link: https://marioarmstrong.github.io/weatherApplication/ 
 
 github Repository: https://github.com/MarioArmstrong/weatherApplication
 
