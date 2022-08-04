@@ -11,18 +11,15 @@
 <body class="body">
     <header class="jumbotron border border-danger rounded">
         <article class="bg-info text-center pt-2 pb-2">
-            <h1 class="display-3">Weather Dashboard</h1>
+            <h1 class="display-3 text-white">Weather Dashboard</h1>
         </article>
     </header>
     <main>
-        <!--<hr id="hr">--><!--Horizontal Line-->
-        
+
         <!--START of Search Box-->
         <section id="search" class="d-flex justify-content-start">
-            <aside id="aside">
                 <input id="searchBoxInput" type="text" placeholder="Search a City">
                 <button id="searchCityBTN">Search</button>
-            </aside>
         </section><!--END of Search Box-->
 
         <section id="helloSection" class="d-flex justify-content-center bg-warning text-white"><!--d-none makes display:none;-->
@@ -30,17 +27,17 @@
                     <h2 class="">Search the weather before you visit!</h2>
                 </div>
         </section>
-  
-        <!--City Highlight-->
-        <section class="cityHighlightArea">
-            <card class="city">
-            </card>
-        </section><!--END Highlight-->
-    
-        <!--5-Day Forecast-->
-        <section class="container bg-warning justify-content-center" id="row">
 
-        </section><!--END 5-day-->
+        <!--City Highlight-->
+        <section class="container" id="cityHighlightArea">
+
+        </section><!--END Highlight-->
+          
+        <!--5-Day Forecast-->
+        <section class="container d-flex" id="dayCards">
+            
+        </section><!--END 5-Day Forecast-->
+
     </main>
 
     <!--START Footer-->

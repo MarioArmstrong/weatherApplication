@@ -14,3 +14,7 @@
     top: 5%; 
     right: 48.5%;
 } */
+
+#cityHighlightArea {
+    max-width: 350px;
+}
