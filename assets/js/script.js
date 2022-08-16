@@ -33,7 +33,6 @@ function fetchURLInfo(event) {
         // : []
   
 
-
     var requestURL = "https://api.openweathermap.org/data/2.5/weather?q=" + input.value + ",us&units=imperial&appid=59ce11a5925422e0542cfcb16e4281b7";
 
     fetch(requestURL)
@@ -50,6 +49,7 @@ function fetchURLInfo(event) {
         var dayHighlight = document.getElementById("cityHighlightArea");
         var name = data.name;
         // console.log(data.name);
+
 
                                                                         //Create elements for DOM HTML
 
@@ -97,6 +97,7 @@ function fetchURLInfo(event) {
         locationWind.classList.add("col");
         locationHumidity.classList.add("col");
 
+
         locTempTitle.classList.add("row");
         locWindTitle.classList.add("row");
         locHumTitle.classList.add("row");
@@ -136,6 +137,7 @@ function fetchURLInfo(event) {
                     var wind = document.createElement("p");// creating p tag for wind speed value
                     var humidity = document.createElement("p");//creating p tag for humidity value
 
+
                     var symbol =document.createElement("i");
 
                                                                             //Adding html content to DOM
@@ -150,8 +152,10 @@ function fetchURLInfo(event) {
                     humidity.textContent = data.daily[i].humidity + " %";//adding data content of humidity value
 
 
+
                                                                             //Appending children to parent elements
                     
+
                     locationTempTitle.appendChild(tempMax);
                     locationWindTitle.appendChild(wind);
                     locationHumidityTitle.appendChild(humidity);
