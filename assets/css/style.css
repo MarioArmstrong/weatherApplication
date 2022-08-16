@@ -18,3 +18,11 @@
 #cityHighlightArea {
     max-width: 350px;
 }
+
+#fiveDayForecast {
+    max-width: 200px;
+}
+
+footer {
+    color: #FF3E00;
+}
