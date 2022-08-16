@@ -7,13 +7,11 @@ var cityHighlight = document.querySelector(".city");
 
 var dayCards = document.getElementById("dayCards");
 
-
                                                                     //Creating Today's Date
 var currentDate = new Date();
 var day = currentDate.getDate();
 var month = currentDate.getMonth() + 1;
 var year = currentDate.getFullYear();
-
 
 function fetchURLInfo(event) {
     event.preventDefault(); 
@@ -29,10 +27,9 @@ function fetchURLInfo(event) {
 
                                                                     //setItems and getItems from localStorage
     let searchedCitiesArray = localStorage.getItem("searched cities");
-        ? JSON.parse(localStorage.setItem("searched cities")) 
-        : []
+        //? JSON.parse(localStorage.setItem("searched cities")) 
+        //: []
   
-
 
     var requestURL = "https://api.openweathermap.org/data/2.5/weather?q=" + input.value + ",us&units=imperial&appid=59ce11a5925422e0542cfcb16e4281b7";
 
@@ -64,6 +61,7 @@ function fetchURLInfo(event) {
         var locationTemp = document.createElement("p");
         var locationWind = document.createElement("p");
         var locationHumidity =document.createElement("p");
+
         var todaysDate = document.createElement("p");
 
                                                                         //Creating html content
@@ -75,6 +73,17 @@ function fetchURLInfo(event) {
         locationWind.textContent = data.wind.speed + " MPH";
         locHumTitle.textContent = "Humidity:";
         locationHumidity.textContent = data.main.humidity + " %";
+
+
+                                                                        //Creating html content
+        locationName.textContent = name;
+        locTempTitle.textContent = "Temp:";
+        locationTemp.textContent = data.main.temp;
+        locWindTitle.textContent ="Wind:";
+        locationWind.textContent = data.wind.speed;
+        locHumTitle.textContent = "Humidity:";
+        locationHumidity.textContent = data.main.humidity;
+
 
                                                                         //Appending children to parents
         locTempTitle.appendChild(locationTemp);
@@ -97,6 +106,7 @@ function fetchURLInfo(event) {
         locationWind.classList.add("col");
         locationHumidity.classList.add("col");
 
+
         locTempTitle.classList.add("row");
         locWindTitle.classList.add("row");
         locHumTitle.classList.add("row");
@@ -114,6 +124,7 @@ function fetchURLInfo(event) {
         // ******onecall gets you all the temp data you need******
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
         var urlData = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=" + APIKey;
             fetch(urlData)
             .then(function(response){
@@ -127,6 +138,7 @@ function fetchURLInfo(event) {
                     var createCardSection = document.createElement("div")//creating container div for Bootstrap styling
 
                     var locationDayHeading = document.createElement("h3");
+
                                                         
                     var locationTempTitle = document.createElement("h4");//creating temperature title
                     var locationWindTitle = document.createElement("h4");//creating wind title
@@ -135,6 +147,7 @@ function fetchURLInfo(event) {
                     var tempMax = document.createElement("p");//creating p tag for temperature value
                     var wind = document.createElement("p");// creating p tag for wind speed value
                     var humidity = document.createElement("p");//creating p tag for humidity value
+
 
                     var symbol =document.createElement("i");
 
@@ -152,6 +165,7 @@ function fetchURLInfo(event) {
 
                                                                             //Appending children to parent elements
                     
+
                     locationTempTitle.appendChild(tempMax);
                     locationWindTitle.appendChild(wind);
                     locationHumidityTitle.appendChild(humidity);
