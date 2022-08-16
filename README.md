@@ -4,8 +4,10 @@ Live github Link: https://marioarmstrong.github.io/weatherApplication/
 
 github Repository: https://github.com/MarioArmstrong/weatherApplication
 
-The application works, but not all of it. The 5-day weather and all its categories are working, but not the main highlighted area that shows you the name of the city and the current weather. Also, the list of recently searched zipcodes set to localStorage has not been set up yet.
+The application is functional! When the user searches a city the welcome section dissapears and the weather is printed on the screen as it is at that exact moment. Also, underneath that center section is the 5-day forecast with labeling of the exact day in the 5-day range. The date function of the 5-day cards is not developed as of yet. Local storage still needs to be developed. Once the local storage is developed the next step is to make the recent searches clickable on the aside section.
 
 
 
-![Screenshot 2022-07-31 092601](https://user-images.githubusercontent.com/89109707/182038219-3394436d-71ff-4671-b4a9-86174fc18fce.jpg)
+![](./assets/extra/Screenshot%202022-08-03%20171445.jpg)
+
+![](./assets/extra/Screenshot%202022-08-15%20225720.jpg)
